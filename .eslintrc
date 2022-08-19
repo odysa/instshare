@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb-typescript",
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    // allow spreading
+    "react/jsx-props-no-spreading": "off"
+  },
+  "ignorePatterns": "*.config.js"
+}
